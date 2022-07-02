@@ -30,4 +30,80 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin:1rem;
+}
+
+.balance-card {
+    width: 100%;
+    background-color: var(--soft-red);
+    color:#fff;
+    border-radius: 1rem;
+    padding: 1.6rem 1.6rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.icon {
+    background-image: url("./images/logo.svg");
+    width: 72px;
+    height: 48px;
+}
+
+.balance-card__heading {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.spending-card {
+    width: 100%;
+    background-color:#fff;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    padding: 1.6rem 1.6rem;
+}
+
+.spending-card__heading {
+    margin-bottom: 2.5rem;
+}
+
+.chart {
+    display:flex;
+    width: 100%;
+    justify-content:space-between;
+}
+
+.chart li {
+    list-style: none;
+}
+
+.divider {
+    height:2px;
+    width:100%;
+    background-color: var(--cream);
+    margin: 2rem 0;
+}
+
+.spending-card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--medium-brown);
+}
+
+.total {
+    font-weight: 700;
+    font-size:2rem;
+    color:#000;
+}
+
+.percent {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color:#000;
+}
+
+.diff-value {
+    text-align: right;
 }

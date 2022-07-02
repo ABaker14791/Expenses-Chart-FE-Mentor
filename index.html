@@ -19,29 +19,35 @@
   <body>
     <main class="container">
       <div class="balance-card">
-        <h2 class="balance-card__heading">My balance</h2>
-        <div class="balance-card__balance">$921.48</div>
+        <div class="col-left">
+          <h3 class="balance-card__heading">My balance</h3>
+          <h2 class="balance-card__balance">$921.48</h2>
+        </div>
         <div class="icon"></div>
       </div>
 
       <div class="spending-card">
         <h1 class="spending-card__heading">Spending - Last 7 days</h1>
-        <div class="chart">
-          mon tue wed thu fri sat sun
+        <div>
+          <canvas id="myChart"></canvas>
         </div>
-        
-        <div class="totals">
-          Total this month
-          $478.33
+        <div class="divider"></div>
+        <div class="spending-card__footer">
+          <div class="col-left">
+            <div class="totals">
+              Total this month<br />
+              <span class="total">$478.33</span>
+            </div>
+          </div>
+          <div class="diff-value"><span class="percent">+2.4%</span><br />from last month</div>
         </div>
-    
-        <div class="diff-value">+2.4% from last month</div>
+
 
       </div>
 
     </main>
 
-
-<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
