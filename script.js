@@ -39,6 +39,7 @@ const main = async () => {
         borderColor: "rgb(255, 99, 132)",
         data: daysData,
         borderRadius: 4,
+        borderSkipped: false,
       },
     ],
   };
